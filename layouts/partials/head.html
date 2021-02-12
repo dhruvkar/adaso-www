@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="google" content="notranslate">
+<meta http-equiv="Content-Language" content="en">
+
+<!---Favicon. Query params added to bust cache-->
+<link rel="icon" href="/favicon.ico?v=1.1"> 
+
+<!--Snipcard Preconnects-->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+
+<!--- CSS FILES -->
+<!--Bootstrap CSS (140.9 kb) -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
+<!--Font Awesome CSS (59.3 kb + 385.5 kb for fonts) -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/fontawesome.min.css">
+<!-- Custom Styles -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+<!--Snipcart CSS-->
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+
+
+
+<!-- JAVASCRIPT FILES -->
+<!--JQuery JS (89.5 kb) -->
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<!--Bootstrap 4.0 + Popper JS (71 kb) -->
+<script src="{{ .Site.BaseURL }}js/bootstrap.bundle.min.js"></script>
+<!--Snipcart CSS-->
+<script async src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="YTY4MTc5NGYtOWQxZi00ZjEwLTlmYTMtODk5YzExOWJhMjk5NjM3NDczNjQ4OTk4MjAwMTkw" data-config-modal-style="side"></div>
+
+
+<title>{{ .Title }}</title>
+
+<meta name="keywords" content="{{ .Keywords }}">
+<meta name="description" content="{{ .Description | default .Site.Params.SiteDescription}}" />
+
+<!-- Responsivity for older IE -->
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+{{ "<![endif]-->" | safeHTML }}
+
+
+<!-- Twitter Tags -->
+<meta name="twitter:card"         content="summary" />
+<meta name="twitter:site"         content="@boomslab" />
+<meta name="twitter:title"        content="{{ .Title }}" />
+<meta name="twitter:image"        content="{{ .Site.BaseURL }}{{ .Params.Img | default .Site.Params.Img}}" />
+<meta name="twitter:description"  content="{{ .Description | default .Site.Params.SiteDescription}}" />

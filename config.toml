@@ -1,0 +1,21 @@
+baseurl = "https://www.adaso.org/"
+title = "Cardano Stake Pool with a Social Impact Flavor"
+languageCode = "en-us"
+googleAnalytics = ""
+
+
+[params]
+
+  sitedescription = ""
+  img = "img/main.jpg"
+  publicemail = "hi@adaso.org"
+
+  [params.social]
+    [params.social.twitter]
+	  link = "https://www.twitter.com/_adaso"
+
+
+
+
+
+

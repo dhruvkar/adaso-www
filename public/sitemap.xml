@@ -3,27 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.boomslab.com/about/</loc>
+    <loc>https://www.adaso.org/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.boomslab.com/products/reviews/</loc>
+    <loc>https://www.adaso.org/products/reviews/</loc>
   </url>
   
   <url>
-    <loc>https://www.boomslab.com/categories/</loc>
+    <loc>https://www.adaso.org/stone-systems/</loc>
   </url>
   
   <url>
-    <loc>https://www.boomslab.com/products/</loc>
+    <loc>https://www.adaso.org/</loc>
   </url>
   
   <url>
-    <loc>https://www.boomslab.com/</loc>
+    <loc>https://www.adaso.org/categories/</loc>
   </url>
   
   <url>
-    <loc>https://www.boomslab.com/tags/</loc>
+    <loc>https://www.adaso.org/products/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.adaso.org/tags/</loc>
   </url>
   
 </urlset>

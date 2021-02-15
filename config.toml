@@ -1,5 +1,6 @@
 baseurl = "https://www.adaso.org/"
 title = "Cardano Stake Pool with a Social Impact Flavor"
+
 languageCode = "en-us"
 googleAnalytics = ""
 

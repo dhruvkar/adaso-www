@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+
+<body class="text-center">
+    {{ partial "header.html" . }}
+
+
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-2 col-md-1"></div>
+  <div class="col-lg-8 col-md-10 col-sm-12">
+    <div class="text-center"><h1>{{ .Title }}</h1>
+      <div class="text-center"><h6><i>by {{ .Params.Author }}</i></h6></div>
+      <div style="margin-bottom: 10px;"><small class="text-muted">{{ dateFormat "Jan 02, 2006" .Date }}</small></div>
+
+      </br>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+      <div class="text-center" style="margin-bottom: 30px;"><div class="sharethis-inline-share-buttons"></div></div>
+      
+      {{ if eq .Params.Showimage "true" }}
+        <img class="img img-fluid center-block" style="border-radius:5px; width: 700px;" src="{{ .Site.BaseURL }}{{ .Params.Img }}" />
+      {{ else }}
+        
+      {{ end }}
+    </div>
+        
+        
+        
+    <p>{{ .Content }}</p>
+
+    <br>
+        
+  </div>
+
+  </div>
+</div>
+
+
+
+{{ partial "footer.html" . }}
+
+
+
+</body>
+
+</html>
